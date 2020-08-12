@@ -115,6 +115,7 @@ void birthDate(){
 }
 
 int main(){
+	//call for function
 	birthDate();
 	return 0;
 }
