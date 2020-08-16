@@ -1,5 +1,7 @@
 #include<stdio.h>
 #include<string.h>
+
+//declare structure student info
 struct studentInfo
 {
 	int rollNo,std;
@@ -8,6 +10,7 @@ struct studentInfo
 	char gender;
 };
 
+// getInfo function to input data
 void getInfo(struct studentInfo *sI1, int no){
 
 	for(int i = 0; i < no; i++){
@@ -30,6 +33,7 @@ void getInfo(struct studentInfo *sI1, int no){
 	}
 }
 
+// displayInfo function to display data
 void displayInfo(struct studentInfo *sI1, int no){
 	for( int i = 0; i< no; i++){
 		printf("\n\t %d \t %s \t %c \t %ld \t %ld \t %s \t", sI1->rollNo, sI1->name, sI1->gender, sI1->PRN, sI1->phoneNo, sI1->homeTown);
@@ -37,12 +41,15 @@ void displayInfo(struct studentInfo *sI1, int no){
 	}
 }
 int main(){
+	//variable to store number of data
 	int no;
 	printf("\nEnter Number of Student: ");
+	//number of records store in 'no' variable
 	scanf("%d",&no);
+	
 	struct studentInfo sI1[10];
 
-	
+	//get info for 'no' number of data
 	getInfo(sI1, no);
 
 	printf("\n\tRoll No\tName\tGender\tPRN\tPhone No\tHome Town");
