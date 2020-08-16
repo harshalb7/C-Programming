@@ -62,6 +62,6 @@ int main(){
 
 	cout<<"\n"<<"\t"<<"Roll No"<<"\t"<<"Name"<<"\t"<<"Gender"<<"\t"<<"PRN"<<"\t"<<"Phone No"<<"\t"<<"Home Town"<<endl;
 	for( int i = 0; i< no; i++)
-		sI[i].displayInfo();
+		sI[i].displayInfo(); //print all data 
 	return 0;
 }
