@@ -2,8 +2,8 @@
 #include<string.h>
 #include <ctype.h> 
 
-
 void stringConcat(char str1[], char str2[]){
+	
 	char str3[10];
 	char str4[10];
 	strcpy(str3, str1);
