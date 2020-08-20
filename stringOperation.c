@@ -21,6 +21,7 @@ void stringCmp(char str1[], char str2[]){
 }
 
 void stringcpy(char str1[], char str2[]){
+	
 	char str3[10];
 	char str4[10];
 	strcpy(str3, str1);
@@ -29,6 +30,7 @@ void stringcpy(char str1[], char str2[]){
 	printf("\nAfter copy string %s into %s, string %s is: %s", str2, str1, str1, str3);
 }
 void stringLen(char str1[], char str2[]){
+	
 	int len1, len2;
 
 	len1 = strlen(str1);
@@ -69,6 +71,7 @@ void stringUpper(char str1[], char str2[]){
 }
 
 void stringLower(char str1[], char str2[]){
+	
 	int i = 0;
 	char str3[10];
 	char str4[10];
